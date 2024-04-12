@@ -3,8 +3,8 @@
 
 const getElem = (id) => document.getElementById(id);
 
-// use querySelect(element) to target DOM elements. If a specific element needs to be targeted, specify this with bracket notation.
-// use by assigning it to a variable with the element as a function parameter -> const var = querySelect('element');
+// use querySelect(element) to target CSS elements. If a specific element needs to be targeted, specify this with bracket notation.
+// use by assigning it to a variable with the element as a function parameter -> const var = querySelect('.element');
 
 const querySelect = (element) => document.querySelector(element);
 
