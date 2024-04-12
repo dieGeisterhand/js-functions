@@ -14,9 +14,13 @@ const querySelect = (element) => document.querySelector(element);
 const getTag = (tag) => document.getElementByTagName(tag);
 
 // use getClass(class) to target DOM elements by class. If a specific element sharing a class with others needs to be target, specify with bracket notation.
-// use by assigning it to a variable iwth the class as the function parameter -> const var = getClass('class');
+// use by assigning it to a variable with the class as the function parameter -> const var = getClass('class');
 
-const getClass = (class) => document.getElementsByClass(class);
+const getClass = (class) => document.getElementsByClass(class); // Example: getClass('name')[0].innerHTML = 'abc'; 
 
-// Example: getClass('name')[0].innerHTML = 'abc';
+// use createElem(element) to create a new HMTL element using the createElement() method. 
+// use by assigning it to a variable with the element to be created as the function parameter -> const var = createElem('p');
+
+const createElem = (element) => document.createElement(element);
+
 
